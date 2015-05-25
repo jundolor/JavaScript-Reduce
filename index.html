@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Summarize with Reduce 3</title>
+	<script>
+	var subdArr = [
+		{city: "Paranaque", subd: "Annex 45"},
+		{city: "Las Pinas", subd: "Soldiers Hill"},
+		{city: "Cainta", subd: "Springville"},
+		{city: "Kawit", subd:"Aguinaldo"},
+		{city: "Paranaque", subd: "Marcelo"}
+	]
+
+	console.log(subdArr.reduce(function(pres, cur){
+		if(cur.city == "Paranaques") return cur;
+		else if(pres.city == "Paranaques") return pres
+		else return {city:"Paranaques", subd: "NA"}
+	}));
+	</script>
+  </head>
+  <body>
+    <h1>Title</h1>
+  </body>
+</html>

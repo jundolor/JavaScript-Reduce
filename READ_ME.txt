@@ -1,0 +1,1 @@
+Sample JavaScript code that uses reduce method on an array
